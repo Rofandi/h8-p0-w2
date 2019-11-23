@@ -1,0 +1,46 @@
+1.Newton Second Law
+
+STORE "massa benda" with any value
+STORE "percepatan benda" with any value
+STORE "resultan gaya" without any value
+
+CALCULATE "massa benda" times "percepatan benda"
+SET "resultan gaya" with calculation result
+
+DISPLAY "resultan gaya"
+DISPLAY "N"
+
+2. Tahun Kabisat
+
+STORE "tahun" with any value
+
+IF "tahun" mod 4 equals to 0
+	DO DISPLAY "tahun kabisat"
+ELSE 
+	DO DISPLAY "bukan tahun kabisat"
+
+------------------------------------------------------------------
+note 100 dan 400 habis dibagi 4 jadi merupakan hal yang redundan |
+------------------------------------------------------------------
+
+3. Laundry Day
+
+STORE "count" to 20
+
+WHILE "count" > 1
+	DISPLAY "count" 
+	CALCULATE "count" add 1
+
+4 Periksa kuku
+
+STORE "count" to 40
+STORE "kuku" without any value
+
+WHILE "count" <40
+	STORE "kuku" from "count" status
+	IF "kuku" equals to "tidak panjang"
+		DO DISPLAY "memuji"
+	ELSE 
+		DO DISPLAY "menghukum"
+	CALCULATE "count" add 1
+	
